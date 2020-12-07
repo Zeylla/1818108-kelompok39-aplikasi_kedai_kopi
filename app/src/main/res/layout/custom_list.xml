@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/iconid"
+            android:src="@drawable/ic_done"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/rating"
+            android:layout_alignLeft="@+id/rating"
+            android:text="NAMA"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:text="HARGA"
+            android:id="@+id/text_harga"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_toRightOf="@+id/thumbnail_offline"
+            android:layout_toEndOf="@+id/thumbnail_offline" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
